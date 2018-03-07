@@ -1,0 +1,89 @@
+body{
+	width:100vw;
+}
+.introductionToWebsite{
+	height: 100vh;
+    width:100vw;
+	background-color:#cb86ff;
+}
+.mySelfIntroduction{
+   width:100vw; 
+   height: 100vh;
+   vertical-align: middle;
+   background-color:#f794f2;
+   
+}
+
+article{
+	font-size:120%;
+}
+
+.textWebsiteIntroduction{
+  color:#f5ff86;
+  font-size:10vw;
+  display: table-cell;
+   vertical-align: middle;
+  font-weight: 700;
+  text-align: center;
+}
+.section_text {
+  color:#f7eb94;
+  font-size:50px;
+  display: table-cell;
+  font-weight: 900;
+  text-align: center;
+  margin-left:40vw;
+
+}
+
+#floatdiv{
+	width: 240px;
+	float: left;
+
+}
+
+.main_content{
+	
+	margin-left:240px;
+    width:813px;
+}
+
+.image_myself{
+    border-radius: 50%;
+	width:20vw;
+	height:30vh;
+    margin-top:10vh;
+	margin-left:37vw;
+}
+.mainContentColor{
+	background-color:#feffc4;
+}
+.color1{
+background-color:#f794f2;
+}
+.color2{
+	background-color:#cb86ff;
+}
+.mail_icon{
+/* 	content:url("email.png"); */
+   width:15%;
+	height:15%;
+	margin-left: 15%;
+	 float:left;
+}
+
+.github_icon{
+	/* content:url("GitHub.png"); */
+	width:15%;
+	height:15%;
+	margin-left:15%;
+	
+}
+
+
+
+
+
+
+
+

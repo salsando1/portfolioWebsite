@@ -1,0 +1,141 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<title>Salvador Portfolio</title>
+	<link href="index.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>	
+     <script src="index.js"></script>    
+
+</head>
+
+<body>
+<section class = "introductionToWebsite">
+<div class="textWebsiteIntroduction">
+  <h3 >Welcome to my portfolio!!</h3>
+ </div>
+</section>
+
+<section class="mySelfIntroduction">
+<img src="my_self.jpg" class="image_myself" alt="my self" height="100" width="100"> 
+     <div class="section_text">
+   
+   <h3>Hello! My name is Salvador, I'm a programmer on this website I will show some of my personal projects and programming concepts I learn in college. Thank you for your visit.</h3>
+      </div>         	
+</section>
+<div class="mainContentColor">
+<!--aside where my info and some nav links-->
+<div id="floatdiv">
+	<br>
+		 
+         <a id="mail_form" href="https://www.google.com" ><img src="email.png" class="mail_icon"></a>
+		 <a href="#" ><img src="GitHub.png" class="github_icon"> </a>
+
+		 <form id="email_form"></form>
+		
+			
+		     
+	     <div id="links_to_conten"></div>
+	
+		</div>	
+<!--this is where all show explanation & code -->
+	<div class="main_content">
+	<br>
+	 <!--   <h1>Portfolio</h1>
+	<p>The purpose of my portfolio is to summarize my programming knowledge.</p> -->
+		<article>
+		  
+			<h2>Class Construction and Object</h2>
+			
+			<h3>C++</h3>
+			<p>In c++ class, Construction consist of a .cpp and .h files. .h files are where class is defined and
+			.cpp file is where class is implemented. .h have all the library we use in our object.</p>
+			<img src="portfolio/cppHfile.jpg"  alt="c++ h. file" height="810" width="738">
+			<p>Here we implemented are overloaded constructor and default constructor.</p>
+			<img src="portfolio/cppCunstructor.jpg"  alt="c++ constructor" height="390" width="750">
+	        <p>Here we implemented are overloaded method.</p>
+			<img src="portfolio/cppOverloadedMutators1.jpg"  alt="c++ class construction" height="354" width="764">
+			<br>
+			<img src="portfolio/cppOverloadedMutators2.jpg"  alt="c++ class construction" height="271" width="703">
+			<p>Here is where we make use of are overloaded constructor</p>
+			<img src="portfolio/cppcreating&settingobject.jpg"  alt="c++ class construction" height="153" width="731">
+			<h3>C#</h3>
+			<p>C# only use one file per class  of files is .cs.Here is where we declared are default
+			constructor and overloaded constructor. Also, this constructor call the base constructor from sprocket class.</p>
+			<img src="portfolio/csclassconstruction.jpg"  alt="c++ class construction" height="393" width="590">
+			<p>Here is where we implement are overloaded constructor. We initialize member variable through constructor.</p>
+			<img src="portfolio/csconstructor.jpg"  alt="c++ class construction" height="393" width="590">
+			<p>Here is where we define are overloaded method.</p>
+			<img src="portfolio/csmethod.jpg"  alt="c++ class construction" height="266" width="601">
+			<p>Here we implement one of the method. Were we only add to the end of the list. 
+			We still have the option in the future if we want to implement adding at certain position.</p> 
+            <img src="portfolio/csusinMethod.jpg"  alt="c++ class construction" height="55" width="432">			
+			<h3>Java</h3>
+			<p>Java  like C# we can declare and define are class in the same file. The java files have the extension of file.java</p>
+            <br>
+            <p>Here is where I declare my overloaded constructor.</p>			
+			<img src="portfolio/javaOverloadedConstructor.jpg"  alt="c++ class construction" height="314" width="685">			
+			<p>Here is where I declare my overloaded method. </p>
+			<img src="portfolio/javaOverloadedMethod.jpg"  alt="c++ class construction" height="641" width="697">			
+			<p>Here I decide to use the overloaded method by using int.</p>
+			<img src="portfolio/javaUsingMethod.jpg"  alt="c++ class construction" height="72" width="688">			
+		    <p>Here a use the overloaded method by passing string and int.</p>	
+		   <img src="portfolio/javaUsingOverloadedMethod.jpg"  alt="c++ class construction" height="34" width="473">				
+          
+		  <h2>Inheritance and Polymorphism</h2>
+		  <p>Inheritance is important because it allow us to reuse code.
+		  Example if we have a base class vehicle. Member variable 
+		  that contains tire, motor, color. We can create a child 
+		  class call truck inherit all those Qualities just add cargo bed
+		  variable. This way we do not to write the whole class.</p>
+		   <h3>C#</h3>
+	       <p>Game object is going to be are base class</p>
+	       <img src="portfolio/csBaseClass.jpg"  alt="c++ class construction" height="470" width="507">						
+		   <p>Here is where tell the compiler this child class and we are going to inherit from this base class.</p>   
+		   <img src="portfolio/csChildClass.jpg"  alt="c++ class construction" height="131" width="684">						
+		   <p>Since we inherit from Game object. Alien is the same data type as Game object.</p>
+		   <img src="portfolio/showingInheritance.jpg"  alt="c++ class construction" height="123" width="565">						
+		   <h2>Graphical User Interface Construction</h2>
+		   <p>The Most modern Graphical user interface for windows is Windows
+		   form.  Windows form is from .Net framework. We start by 
+		   inherit from window.  We get the basics just a frame like 
+		   in swing. We can start adding are controllers through 
+		   the XAML.</p>
+		   <img src="portfolio/csGuiclass.jpg"  alt="c++ class construction" height="145" width="464">
+		   <p>What makes windows form more dynamic is XAML. You can easily make 
+		   changes to your GUI. Nest controllers inside of controllers. 
+		   Initialize the GUI like when launch certain check box needs to be
+		   check with a line of code.</p>
+		   <img src="portfolio/csGuiMaiinScreeen.jpg"  alt="c++ class construction" height="575" width="646">
+		   <p>Dialogs are important so you can tell the user if he is doing something wrong.</p>
+		   <img src="portfolio/csGuiDialog.jpg"  alt="c++ class construction" height="590" width="685">
+		    <p>Another way you can interact with the user is by writing the result or probably an order like following.</p> 
+		   <img src="portfolio/csprintText.jpg"  alt="c++ class construction" height="80" width="736">
+		   
+		   <h2>Database manipulation</h2>
+		   <h3>C#</h3>
+		   <p>GUI are important especially when you can combined with a 
+		   connection through a database. .Since Microsoft have its Microsoft 
+		   SQL server.  C# library for Microsoft SQL is sqlClient. Allow as to 
+		   connect to database and query the database without using SQL syntax.</p>
+		   <img src="portfolio/sqlLibrary.jpg"  alt="c++ class construction" height="58" width="=738">
+		   <p>Here is how we create are connection to server. Also, how we 
+		   open the connection and make sure if anything goes wrong we closed
+		   the connection.</p>
+		   <img src="portfolio/csCreatingSqlConnection.jpg"  alt="c++ class construction" height="67" width="813">
+           <p>Here is how we Query the database for example update statement.</p>		   
+		   <img src="portfolio/cssqlStattemtn.jpg"  alt="c++ class construction" height="291" width="559">
+		   		   
+		   
+		   
+		   
+		</article>
+	</main>
+	</div>
+</body>
+</html>
+
+
+
