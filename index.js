@@ -47,9 +47,90 @@ $(document).ready(function(){
 	    });
 			
 	});
+	floatDivPersonalProjects()
 	
-	// --------adding anchor to floatdiv---------	
+	$("#btnSelection").click(btnSelectionAction);
+	
    
+	
+
+   anchorListenerforfloatDiv();
+	
+		
+
+});
+
+function btnSelectionAction(){
+	var value = $("#btnSelection").attr("value");
+	
+	if( value == "see personal projects"){
+		removeTitleandAnchor();
+		
+		$("#btnSelection").attr("value","see portfolio");
+		floatDivPersonalProjects()
+	}else if(value == "see portfolio"){
+		removeTitleandAnchor();
+		
+		$("#btnSelection").attr("value","see personal projects");
+		floatDivPortfolio();
+	}
+}
+function removeTitleandAnchor(){
+	$( "#title h2" ).remove();
+		$( "#title p" ).remove();
+		$( "#links_to_conten a" ).remove();
+		$( "#links_to_conten br" ).remove();
+}
+function anchorListenerforfloatDiv(){
+		$("#links_to_conten a").click (function(index) {
+		if(index != 3 ){
+		
+		// get the id selector of the selected h2 element from the <a> tag
+		var id = $(this).attr("href");
+		
+		// setting all the heading back to normal except the current want
+		for(var i = 1; i < 5 ;++i){
+			
+		$("#heading" + i ).not(this).css({ "color": "black", "font-size": "120%" });
+		
+		}
+        
+		// change the styles for the selected heading
+		$(id).css({ "color": "#f794f2", "font-size": "150%" });	
+		}
+		
+	});
+}
+
+function floatDivPersonalProjects(){
+	$("#title").append("<h2>Personal Projects</h2><p>This part a will show  the personal projects i done outside of college</p>");
+	$("#links_to_conten").append("<br>"); // add break to aside
+    
+	$("article h2").each(function( index ) {
+	      $("#links_to_conten").append("<a>"+ $(this).text()+"</a>")
+   });
+	
+// insert break after each anchor
+	$( "#links_to_conten a" ).each(function() {
+          $("<br>").insertAfter( this )
+    });
+	
+	
+	
+  $("#links_to_conten").append("<a>Back to top</a>"); // add anchor to aside
+  
+  $("#links_to_conten a").each(function( index ) {
+	  var num = index + 1;
+	      $(this).attr("href","#heading" + num);
+		  
+		  if(index == 4){
+			    $(this).attr("href","#heading" +1);
+		  }
+   });
+}
+
+function floatDivPortfolio(){
+	
 	$("#title").append("<h2>Portfolio</h2><p>The purpose of my portfolio is to summarize my programming knowledge, also show some of my college projects</p>");
 	$("#links_to_conten").append("<br>"); // add break to aside
     
@@ -74,34 +155,7 @@ $(document).ready(function(){
 			    $(this).attr("href","#heading" +1);
 		  }
    });
-	
-
-
-	
-	
-	// change the CSS for the selected topic and move the TOC
-	$("#links_to_conten a").click (function(index) {
-		if(index != 3 ){
-		
-		// get the id selector of the selected h2 element from the <a> tag
-		var id = $(this).attr("href");
-		
-		// setting all the heading back to normal except the current want
-		for(var i = 1; i < 5 ;++i){
-			
-		$("#heading" + i ).not(this).css({ "color": "black", "font-size": "120%" });
-		
-		}
-        
-		// change the styles for the selected heading
-		$(id).css({ "color": "#f794f2", "font-size": "150%" });	
-		}
-		
-	});
-		//--------end of test--- 
-		
-
-});
+}
 
 function autoScrollFloatDiv(){
 		
