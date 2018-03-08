@@ -48,52 +48,36 @@ $(document).ready(function(){
 			
 	});
 	
-	// --------test---------	
-    // add an h2 heading to the aside
-	
-	$("#links_to_conten").append("<p>The purpose of my portfolio is to summarize my programming knowledge.</p><h2>Portfolio</h2>");
-	$("#links_to_conten").append("<br>"); // add break to aside
-    $("#links_to_conten").append("<a>Back to top</a>"); // add anchor to aside
-	// wrap the h2 text in the article in <a> tags
-	$("article h2").wrapInner("<a></a>");
-
-	// add ids to the new <a> tags
-	/*  $("article a").each (function(index) {
-		var id = "heading" + (index + 1);
-		$(this).attr("id", id);
-	    }); */
-	
-	// adding <a> elements
-	    $("article a").attr("a",function (index){
-			var id = "heading" + (index + 1);
-		$(this).attr("id", id);
-		});
-	
-	// clone the <a> tags in the article and insert them into the aside
-	$("article a").clone().insertAfter($("#links_to_conten h2"));
+	// --------adding anchor to floatdiv---------	
    
-	// remove the id attributes from the <a> tags in the aside
-	$("#links_to_conten a").removeAttr("id");
+	$("#title").append("<h2>Portfolio</h2><p>The purpose of my portfolio is to summarize my programming knowledge, also show some of my college projects</p>");
+	$("#links_to_conten").append("<br>"); // add break to aside
+    
+	$("article h2").each(function( index ) {
+	      $("#links_to_conten").append("<a>"+ $(this).text()+"</a>")
+   });
 	
-	// add the href attributes to the <a> tags in the aside
-	$("#links_to_conten a").attr("href", function(index) {
-	// checking the for last <a></a>
-		if(index == 4){
-    // adding heading 1 to  href only <a>back to the top </a>
-			var href = "#heading1";
-		}else{
-			var href = "#heading" + (index + 1);
-		}
-
-		return href;
-    });
-
-	// insert break after each anchor
+// insert break after each anchor
 	$( "#links_to_conten a" ).each(function() {
           $("<br>").insertAfter( this )
     });
- 
+	
+	
+	
+  $("#links_to_conten").append("<a>Back to top</a>"); // add anchor to aside
+  
+  $("#links_to_conten a").each(function( index ) {
+	  var num = index + 1;
+	      $(this).attr("href","#heading" + num);
+		  
+		  if(index == 4){
+			    $(this).attr("href","#heading" +1);
+		  }
+   });
+	
 
+
+	
 	
 	// change the CSS for the selected topic and move the TOC
 	$("#links_to_conten a").click (function(index) {
