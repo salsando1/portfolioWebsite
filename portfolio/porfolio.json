@@ -1,35 +1,4 @@
-color i want to use
-1.yellow #ded447
-2.pink #ca47de
-3.red  #de475b
-4.green   #5bde47
-
-
-possible to handle ajax with c#
-
-http://www.c-sharpcorner.com/UploadFile/dacca2/understand-jquery-ajax-function-call-code-behind-C-Sharp-method/
-
-
-how to create switch button
-https://www.w3schools.com/howto/howto_css_switch.asp
-
-color wheel 
-https://www.sessions.edu/color-calculator/
-
-use diffrent css for diffrent screen
-https://stackoverflow.com/questions/8294377/how-to-write-different-html-for-different-screen-sizes
-
-
-using view port tag
-
-https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag
-
-website to see phone compability
-https://ready.mobi/#615257-ns77
-
-//--------------------------------------------------//
-	  	
-		<article>
+<article>
 	   <br>
 			<h2><a id="heading1">Class Construction and Object<a></h2>
 			
@@ -112,9 +81,3 @@ https://ready.mobi/#615257-ns77
            <p>Here is how we Query the database for example update statement.</p>		   
 		   <script src="https://gist.github.com/salsando1/3347d56cf00ecbd3396020986c266f30.js"></script>
 		   	</article>	   
-		   
-		   
-		   
-
-
-//--------------------------------------------------//

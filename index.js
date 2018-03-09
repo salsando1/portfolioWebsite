@@ -47,6 +47,7 @@ $(document).ready(function(){
 	    });
 			
 	});
+	
 	floatDivPersonalProjects()
 	
 	$("#btnSelection").click(btnSelectionAction);
@@ -75,6 +76,8 @@ function btnSelectionAction(){
 		floatDivPortfolio();
 	}
 }
+
+
 function removeTitleandAnchor(){
 	$( "#title h2" ).remove();
 		$( "#title p" ).remove();
@@ -181,11 +184,3 @@ function autoScrollFloatDiv(){
 		
 	
 }
-
-
-
-
-
-	
-	
-	
