@@ -48,43 +48,41 @@
 		<article>
 	   <br>
 			<h2><a id="heading1">Schedule Generator<a></h2>
-			<p>The program generates schedules. you tell the program business hours, and the days you 
-			want off, how many hours you want to work and randomly set if the person is going to open or close.</p>
+			<p>The program generates schedules. You tell the program business hours, and the days you want off,
+			how many hours you want to work and randomly set if the person is going to open or close.</p>
 			<h3>The flow of the program.</h3>
-			<p>first you set up the bussines hours</p>
-		    <script src="https://gist.github.com/salsando1/0e3ce8269ffc87d4de0b6f4d1df25c11.js"></script>
-			<p>Here we implemented are overloaded constructor and default constructor.</p>
-			<script src="https://ggithub.com/salsando1/48cd2d6a84cee73b48c48ceb908d236d.js"></script>
-	        <p>Here we implemented are overloaded method.</p>
-			<script src="https://gist.github.com/salsando1/ebf961bc4e95c5bbfe9c85e9b33dda6c.js"></script>
-			<br>
-			<script src="https://gist.github.com/salsando1/fe881e881d5fc96026637e44d9f49b25.js"></script>
-			<p>Here is where we make use of are overloaded constructor</p>
-			<script src="https://gist.github.com/salsando1/3ba59c20b98d0dfac819a7219f47a90c.js"></script>
-			<h3>C#</h3>
-			<p>C# only use one file per class  of files is .cs.Here is where we declared are default
-			constructor and overloaded constructor. Also, this constructor call the base constructor from sprocket class.</p>
-
-			<p>Here is where we define are overloaded constructor. We initialize member variable through constructor.</p>
-			<script src="https://gist.github.com/salsando1/e0e594a08f22c9439e2fc83d02b4aa30.js"></script>
-			<p>Here is where we define are overloaded method.</p>
-			<script src="https://gist.github.com/salsando1/8591a574f10335ec2f0ce0eaba90b47a.js"></script>
-			<p>Here we implement one of the method. Were we only add to the end of the list. 
-			We still have the option in the future if we want to implement adding at certain position.</p> 
-            <script src="https://gist.github.com/salsando1/13094b4213a61869ca9f9a7608af83e1.js"></script>			
-			<h3>Java</h3>
-			<p>Java  like C# we can declare and define are class in the same file. The java files have the extension of file.java</p>
-            <br>
-            <p>Here is where I declare my overloaded constructor.</p>			
-			<script src="https://gist.github.com/salsando1/a9304043df1926c3edaaa4f314df1d7e.js"></script>			
-			<p>Here is where I declare my overloaded mutator. </p>
-			<script src="https://gist.github.com/salsando1/7652d6bda0087d0a2a52bcdae047dc7d.js"></script>			
-			<p>Here I decide to use the overloaded method by using int.</p>
-			<script src="https://gist.github.com/salsando1/cc53d9e35aaa08d0f2c36bbc32db312f.js"></script>			
-		    <p>Here a use the overloaded method by passing string and int.</p>	
-		   <script src="https://gist.github.com/salsando1/9f53865775b03e58afeb6d1713d803c0.js"></script>				
-          
-
+			<p>First, you set up the business hours.</p>
+			<img src="portfolio/schedule1.jpg" height="586" width="1222">
+			<img src="portfolio/schedule2.jpg" height="600" width="694">
+			<p>after setting the hours the program actually give the option to add an employee </p>
+			<img src="portfolio/schedule3.jpg" height="577" width="1226">
+			<p>Second, tell the program total hours and days off you need.</p>
+			<img src="portfolio/schedule4.jpg" height="280" width="444">
+			<p>Lastly, the program prints the schedule with the main screen you can modify the schedule as you please.</p>
+            <img src="portfolio/schedule5.jpg" height="582" width="1216">
+			<h3> Data class</h3>
+			<h4>Time Class</h4>
+			<p>The time class has the ability to accept time in am or pm and 24 hours. Also, the time gives the
+			total hours and minutes the from the time. Time return a formatted string time.</p>
+			<script src="https://gist.github.com/salsando1/f11e1b814826fe2686b070057dfa774b.js"></script>
+			<h4>Schedule class</h4>
+			<p>Schedule class is the one who holds time. Also has the ability to add all the week minutes and 
+			hours. The schedule also has the ability to return a formatted string method the return a formatted schedule.</p>
+			<script src="https://gist.github.com/salsando1/a6b5ae06320121dd0f1a238b9e6de714.js"></script>
+			<h4>Schedule Generator</h4>
+			<p>First, the class checks if requested working hours is in the range of business hours.</p>
+			<script src="https://gist.github.com/salsando1/57eb10c09539fdaee298b1b51b6a4781.js"></script>
+			<p>Second, working hours are divided randomly in the week, the way this actually works randomly 
+			get day subtract 30 minutes from working hours and add to date. Stop until working hours reach 0.</p>
+			<script src="https://gist.github.com/salsando1/68bfebbbd1d86dd2fede32844ffb6bb3.js"></script>
+			<p>Lastly, randomly choose is going to open or closed. If open is selected start counting 
+			from opening else if closed is selected start counting from closed time.</p>
+			<script src="https://gist.github.com/salsando1/f8bebf029ed046c0a5b32eb5fd770cd3.js"></script>
+			<h2><a id="heading2">Timekeeping Android App with CRUD using SQLite <a></h2>
+		    <h3>The flow of the program.</h3>
+			
+			
+			
 	</div>
 	</div>
 </body>
