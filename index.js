@@ -60,6 +60,34 @@ $(document).ready(function(){
 		
 
 });
+function getporfolio(){
+	$(".main_content article").remove();
+
+			
+	$.ajax({
+				type: "get",
+				url: "http://ssandoval114.com/jsonFiles/personalproject.json",
+				beforeSend: function() {
+					$("#team").html("Loading...");
+				},
+				timeout: 10000,
+				error: function(xhr, status, error) {
+					alert("Error: " + xhr.status + " - " + error);
+				},
+				dataType: "json",
+				success: function(data) {
+					$("#team").html("");
+					$.each(data, function() {
+			    		$.each(this, function(key, value) {
+							$("#team").append(
+								"Name: " + value.name + "<br>" + 
+								"Title: " + value.title + "<br>" + 
+								"Bio: " + value.bio + "<br><br>"
+							);
+						});
+					});
+				}
+			});
 
 function btnSelectionAction(){
 	var value = $("#btnSelection").attr("value");
@@ -73,6 +101,7 @@ function btnSelectionAction(){
 		removeTitleandAnchor();
 		
 		$("#btnSelection").attr("value","see personal projects");
+		getporfolio();
 		floatDivPortfolio();
 	}
 }
@@ -120,7 +149,7 @@ function floatDivPersonalProjects(){
 	
 	
 	
-  $("#links_to_conten").append("<a>Back to top</a>"); // add anchor to aside
+
   
   $("#links_to_conten a").each(function( index ) {
 	  var num = index + 1;
@@ -147,8 +176,7 @@ function floatDivPortfolio(){
     });
 	
 	
-	
-  $("#links_to_conten").append("<a>Back to top</a>"); // add anchor to aside
+
   
   $("#links_to_conten a").each(function( index ) {
 	  var num = index + 1;
