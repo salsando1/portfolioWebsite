@@ -35,7 +35,7 @@
         <div> <a id="mail_form" href="https://www.google.com" ><img src="email.png" class="mail_icon"></a>
 		 
 		 <a target="_blank" href="https://github.com/salsando1" ><img src="GitHub.png" class="github_icon"> </a>
-        <a href="#" ><img src="faceH.png" class="github_icon"> </a></div>
+        <a href="#" ><img src="face_overH.png" class="github_icon"> </a></div>
 		 <form id="email_form"></form>
 		<div id="links_to_conten">
 		
@@ -44,7 +44,6 @@
 		</div>	
 <!--this is where all show explanation & code -->
 	<div class="main_content">
-	
 		<article>
 	   <br>
 			<h2><a id="heading1">Schedule Generator<a></h2>
@@ -79,10 +78,35 @@
 			from opening else if closed is selected start counting from closed time.</p>
 			<script src="https://gist.github.com/salsando1/f8bebf029ed046c0a5b32eb5fd770cd3.js"></script>
 			<h2><a id="heading2">Timekeeping Android App with CRUD using SQLite <a></h2>
+			<p>This program store time and tells you hours and minutes you have made so far.</p>
 		    <h3>The flow of the program.</h3>
-			
-			
-			
+			<p>The main screen shows all the hours you did so far.</p>
+			<img src="portfolio/TimeKeeping1.png" height="1093" width="583">
+			<p>If you want to see the total hours you did on a day you can touch the date and dialog will 
+			show you time and total hours for the day. You can add another time by touching the plus sign in the dialog.</p>
+			<img src="portfolio/TimeKeeping2.png" height="1089" width="564">
+			<img src="portfolio/TimeKeeping3.png" height="1079" width="559">
+			<p>If you want to add another date you can do that on the main screen. This screen shows you a calendar as 
+			well. The program also can delete all records or delete by date. </p>
+			<img src="portfolio/TimeKeeping5.png" height="1096" width="560">			
+			<h3> Class the handle data</h3>
+			<h4>TimeKeepingCursorAdapter Class</h4>
+			<p>We use a simple cursor adapter. This class helps us to put data in a listview.</p>
+			<script src="https://gist.github.com/salsando1/cb2399513f288cc0afeb99840168d674.js"></script>
+			<h4>TimeKeepinginDbAdapter Class</h4>
+			<p>This class is the one who queries the database.</p>
+			<script src="https://gist.github.com/salsando1/8a7e8406d82260ca75a08f8ab779c8e8.js"></script>
+			<h2><a id="heading3">Portfolio Website<a></h2>
+			<h3> Floatdiv</h3>
+			<p>The code check when the top of the browser reaches the main content then div start moving to the top of the
+			browser. If you pass the top of main content then stop and stay there.</p>
+			<script src="https://gist.github.com/salsando1/3ba5a14f3755e0d2fa4b79e23aec6e90.js"></script>
+             <h3>Button action</h3>
+			 <p>Since the website uses Ajax.  The h2 constantly changes then JavaScript copy and create a new anchor. Also, 
+			 this same part adds a new title to floatdiv that relate to what you seeing.</p>
+			 <script src="https://gist.github.com/salsando1/7e13d694449da57a215098a06b2779d2.js"></script>
+			 <br>
+			 </article>
 	</div>
 	</div>
 </body>
