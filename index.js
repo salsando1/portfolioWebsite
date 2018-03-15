@@ -7,8 +7,8 @@ $(document).ready(function(){
 	
 	
 	$(document).on("scroll", autoScrollFloatDiv);	
+    
 
-	
 	var isClick = true;
 	
 	$("#mail_form").click(function(evt){
@@ -64,30 +64,32 @@ function getporfolio(){
 	$(".main_content article").remove();
 
 			
-	$.ajax({
-				type: "get",
-				url: "http://ssandoval114.com/jsonFiles/personalproject.json",
-				beforeSend: function() {
-					$("#team").html("Loading...");
-				},
-				timeout: 10000,
-				error: function(xhr, status, error) {
-					alert("Error: " + xhr.status + " - " + error);
-				},
-				dataType: "json",
-				success: function(data) {
-					$("#team").html("");
-					$.each(data, function() {
-			    		$.each(this, function(key, value) {
-							$("#team").append(
-								"Name: " + value.name + "<br>" + 
-								"Title: " + value.title + "<br>" + 
-								"Bio: " + value.bio + "<br><br>"
-							);
-						});
-					});
-				}
-			});
+		 //  where th json is coming from 
+			var url = "http://ssandoval114.com/jsonFiles/personalproject.json";
+	// function to get json 
+			$.getJSON(url, function(data){
+				var html = "";   // item is the the name of the file the contain json
+				$.each(data.personalprojects, function(i, personalprojects){
+				// adding html elements do display information the file contain
+				   /*  $( ".main_content" ).load(function(){ */
+	                html +=  personalprojects.description ;
+					
+									/* }); */
+				});
+				
+				
+						$(".main_content").html(html); // setting element and file data to div
+						
+			
+				
+				
+				/* var arr = document.getElementsByTagName('script');
+				for (var n = 0; n < arr.length; n++)
+                eval(arr[n].innerHTML)//run script inside div */
+			});  
+			
+			
+}
 
 function btnSelectionAction(){
 	var value = $("#btnSelection").attr("value");
