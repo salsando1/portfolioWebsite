@@ -1,0 +1,24 @@
+.code{
+	background-color:#ffffff;
+	overflow: visible;
+	 word-wrap: normal;
+     
+}
+.gray{
+	color: #6a737d;
+	
+}
+
+
+
+.blue{
+	 color: #005cc5;
+}
+
+.purple{
+	color:#6f42c1;
+}
+
+.space{
+    padding: 1px ;	
+}
