@@ -40,6 +40,7 @@ https://ready.mobi/#615257-ns77
 			<h3>C++</h3>
 			<p>In c++ class, Construction consist of a .cpp and .h files. .h files are where class is defined and
 			.cpp file is where class is implemented. .h have all the library we use in our object.</p>
+			<div id="git0"></div>
 			<p>Here we implemented are overloaded constructor and default constructor.</p>
 			<div id="git1"></div>	
 	        <p>Here we implemented are overloaded method.</p>
@@ -69,7 +70,7 @@ https://ready.mobi/#615257-ns77
 			<p>Here I decide to use the overloaded method by using int.</p>
 			<div id="git10"></div>			
 		    <p>Here a use the overloaded method by passing string and int.</p>	
-		   <div id="git11"><div>				
+		   <div id="git11"></div>				
           
 		  <h2><a id="heading2">Inheritance and Polymorphism<a></h2>
 		  <p>Inheritance is important because it allow us to reuse code.
@@ -139,20 +140,20 @@ https://ready.mobi/#615257-ns77
 			<h4>Time Class</h4>
 			<p>The time class has the ability to accept time in am or pm and 24 hours. Also, the time gives the
 			total hours and minutes the from the time. Time return a formatted string time.</p>
-			<script src="https://gist.github.com/salsando1/f11e1b814826fe2686b070057dfa774b.js"></script>
+			<div id="git1"></div>
 			<h4>Schedule class</h4>
 			<p>Schedule class is the one who holds time. Also has the ability to add all the week minutes and 
 			hours. The schedule also has the ability to return a formatted string method the return a formatted schedule.</p>
-			<script src="https://gist.github.com/salsando1/a6b5ae06320121dd0f1a238b9e6de714.js"></script>
+			<div id="git2"></div>
 			<h4>Schedule Generator</h4>
 			<p>First, the class checks if requested working hours is in the range of business hours.</p>
-			<script src="https://gist.github.com/salsando1/57eb10c09539fdaee298b1b51b6a4781.js"></script>
+			<div id="git3"></div>
 			<p>Second, working hours are divided randomly in the week, the way this actually works randomly 
 			get day subtract 30 minutes from working hours and add to date. Stop until working hours reach 0.</p>
-			<script src="https://gist.github.com/salsando1/68bfebbbd1d86dd2fede32844ffb6bb3.js"></script>
+			<div id="git4"></div>
 			<p>Lastly, randomly choose is going to open or closed. If open is selected start counting 
 			from opening else if closed is selected start counting from closed time.</p>
-			<script src="https://gist.github.com/salsando1/f8bebf029ed046c0a5b32eb5fd770cd3.js"></script>
+			<div id="git5"></div>
 			<h2><a id="heading2">Timekeeping Android App with CRUD using SQLite <a></h2>
 			<p>This program store time and tells you hours and minutes you have made so far.</p>
 		    <h3>The flow of the program.</h3>
@@ -168,20 +169,19 @@ https://ready.mobi/#615257-ns77
 			<h3> Class the handle data</h3>
 			<h4>TimeKeepingCursorAdapter Class</h4>
 			<p>We use a simple cursor adapter. This class helps us to put data in a listview.</p>
-			<script src="https://gist.github.com/salsando1/cb2399513f288cc0afeb99840168d674.js"></script>
+			<div id="git6"></div>
 			<h4>TimeKeepinginDbAdapter Class</h4>
 			<p>This class is the one who queries the database.</p>
-			<script src="https://gist.github.com/salsando1/8a7e8406d82260ca75a08f8ab779c8e8.js"></script>
+			<div id="git7"></div>
 			<h2><a id="heading3">Portfolio Website<a></h2>
 			<h3> Floatdiv</h3>
 			<p>The code check when the top of the browser reaches the main content then div start moving to the top of the
 			browser. If you pass the top of main content then stop and stay there.</p>
-			<script src="https://gist.github.com/salsando1/3ba5a14f3755e0d2fa4b79e23aec6e90.js"></script>
+			<div id="git8"></div>
              <h3>Button action</h3>
 			 <p>Since the website uses Ajax.  The h2 constantly changes then JavaScript copy and create a new anchor. Also, 
 			 this same part adds a new title to floatdiv that relate to what you seeing.</p>
-			 <script src="https://gist.github.com/salsando1/7e13d694449da57a215098a06b2779d2.js"></script>
+			 <div id="git9"></div>
 			 <br>
 			 </article>
-
 //------------------------------personal project--------------------//
