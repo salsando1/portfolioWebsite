@@ -10,6 +10,8 @@ $(document).ready(function(){
 
 	var isClick = true;
 	
+	/*
+   // when a learn php
 	$("#mail_form").click(function(evt){
 
 		evt.preventDefault();	
@@ -36,7 +38,7 @@ $(document).ready(function(){
 			  isClick = false;		
 	    }	
 		
-	   
+	  
 		$("#btnCancel").click(function(evt){
 		   $( "#btnEnter" ).remove();
 		   $("#btnCancel").remove();
@@ -46,10 +48,9 @@ $(document).ready(function(){
 	    });
 			
 	});
-	
-	floatDivPersonalProjects();
-  //runOverwriteScriptPortfolio();
-    runOverwriteScriptPersonalProject();
+	 */ 
+	floatDivPortfolio();
+    runOverwriteScriptPortfolio();
 	
 	$("#btnSelection").click(btnSelectionAction);
 	
@@ -73,11 +74,12 @@ function runOverwriteScriptPersonalProject(){
    postscribe('#git7','<script src=https://gist.github.com/salsando1/8a7e8406d82260ca75a08f8ab779c8e8.js></script>');
    postscribe('#git8','<script src=https://gist.github.com/salsando1/3ba5a14f3755e0d2fa4b79e23aec6e90.js></script>');
    postscribe('#git9','<script src=https://gist.github.com/salsando1/7e13d694449da57a215098a06b2779d2.js></script>');
+   postscribe('#git10','<script src=https://gist.github.com/salsando1/f66e7ffd7262a88f5b125258e9585bcc.js></script>')
 }
 function runOverwriteScriptPortfolio(){
 	postscribe('#git0','<script src=https://gist.github.com/salsando1/0e3ce8269ffc87d4de0b6f4d1df25c11.js></script>');
 	postscribe('#git1', '<script src=https://gist.github.com/salsando1/48cd2d6a84cee73b48c48ceb908d236d.js></script>');
-	postscribe('#git2','<script src=https://gist.github.com/salsando1/ebf961b<c4e95c5bbfe9c85e9b33dda6c.js></script>');
+	postscribe('#git2','<script src=https://gist.github.com/salsando1/ebf961bc4e95c5bbfe9c85e9b33dda6c.js></script>');
 	postscribe('#git3','<script src=https://gist.github.com/salsando1/fe881e881d5fc96026637e44d9f49b25.js></script>');
 	postscribe('#git4','<script src=https://gist.github.com/salsando1/3ba59c20b98d0dfac819a7219f47a90c.js></script>');
 	postscribe('#git5','<script src=https://gist.github.com/salsando1/e0e594a08f22c9439e2fc83d02b4aa30.js></script>');
@@ -97,34 +99,27 @@ function runOverwriteScriptPortfolio(){
 	postscribe('#git19','<script src=https://gist.github.com/salsando1/3347d56cf00ecbd3396020986c266f30.js></script>'); 
 }
 function getporfolio(){
-	//$(".main_content article").remove();
+	$(".main_content article").remove();
 
 			
-		/* //  where th json is coming from 
-			var url = "http://ssandoval114.com/jsonFiles/personalproject.json";
-	// function to get json 
+		 //  where th json is coming from 
+			var url = "http://ssandoval114.com/jsonFiles/porfolio.json";
+	       // function to get json 
 			$.getJSON(url, function(data){
 				var html = "";   // item is the the name of the file the contain json
-				$.each(data.personalprojects, function(i, personalprojects){
+				$.each(data.porfolio, function(i, porfolio){
 				// adding html elements do display information the file contain
-				     $( ".main_content" ).load(function(){ 
-	                html +=  personalprojects.description ;
+				   
+	                html +=  porfolio.description ;
 					
 							
 				});
 				
 				
-						//$(".main_content").html(html); // setting element and file data to div
-						
-			     //   postscribe(".main_content", html ); // Data returned
+						$(".main_content").html(html); // setting element and file data to div
 				
-				
-			
 			});
 			
-			 
-			*/
-					
 			runOverwriteScriptPortfolio();			
 }
 		
@@ -139,14 +134,14 @@ function setAnchorCss(){
 	 var h2positionafter = parseInt( h2position + 200);
 	 var h2positionbefore = parseInt(h2position - 100); 
 	 var lastScrollTop = 0;
-	 var totalofTag = console.log($("article h2").length);
+	 var totalofTag = $("article h2").length;
 	/* console.log(browsertop + "browser");
 	console.log(h2positionafter + "after");
 	console.log(h2positionbefore + "before"); */
 /* 		// range from 2 - 7
 	if (moonOrbit > 1 && moonOrbit < 8)  */
 	
-	
+	console.log(totalofTag);
 	 
 	if(browsertop > h2positionbefore && browsertop < h2positionafter){
 		if(index == 0){
@@ -154,7 +149,22 @@ function setAnchorCss(){
 			$("#links_to_conten a" ).css({ "color":"#cb86ff", "font-weight": "bold"});
 			
 			$("#links_to_conten a" ).not("#aheading" + num).css({ "color": "#4183c4", "font-weight": "normal"}); 
-		}             
+		
+		}else{
+			
+			if( h2position > browsertop){
+			
+			$("#links_to_conten a" ).css({ "color":"#cb86ff", "font-weight": "bold"});
+			console.log("activate");
+			$("#links_to_conten a" ).not("#aheading" + index).css({ "color": "#4183c4", "font-weight": "normal"}); 	
+			
+			}else if( h2position < browsertop){
+				
+			$("#links_to_conten a" ).css({ "color":"#cb86ff", "font-weight": "bold"});
+			console.log("activate");
+			$("#links_to_conten a" ).not("#aheading" + num).css({ "color": "#4183c4", "font-weight": "normal"}); 
+			}
+		}            
 			 
 	}
 	
@@ -207,7 +217,7 @@ function anchorListenerforfloatDiv(){
 }
 
 function floatDivPersonalProjects(){
-	$("#title").append("<h2>Personal Projects</h2><p>This part a will show  the personal projects i done outside of college</p>");
+	$("#title").append("<h2>Personal Projects</h2><p>This part a will show the personal projects I done outside of college.</p>");
 	$("#links_to_conten").append("<br>"); // add break to aside
     
 	$("article h2").each(function( index ) {
