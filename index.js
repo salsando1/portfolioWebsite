@@ -10,11 +10,12 @@ $(document).ready(function(){
 
 	var isClick = true;
 	
-	/*
+	
    // when a learn php
-	$("#mail_form").click(function(evt){
+/*	$("#mail_form").click(function(evt){
 
 		evt.preventDefault();	
+		runOverwriteScriptPersonalProject();
 	
        if(isClick == true){
 			var enterButton = $('<input type="button" id="btnEnter" value="send"/>');
@@ -46,9 +47,10 @@ $(document).ready(function(){
 		   $("#txtMessage").remove();
 		   isClick = true;
 	    });
-			
+		
 	});
-	 */ 
+	 */	 
+	 
 	floatDivPortfolio();
     runOverwriteScriptPortfolio();
 	//runOverwriteScriptPersonalProject();
@@ -121,7 +123,7 @@ function getporfolio(){
 				
 			});
 			
-			runOverwriteScriptPortfolio();			
+			$( ".main_content article" ).ready(runOverwriteScriptPortfolio);			
 }
 
 function getpersonProject(){
@@ -133,11 +135,11 @@ function getpersonProject(){
 	       // function to get json 
 			$.getJSON(url, function(data){
 				var html = "";   // item is the the name of the file the contain json
-				$.each(data.personproject, function(i, personproject){
+				$.each(data.personalproject, function(i, personalproject){
 				// adding html elements do display information the file contain
 				   
-	                html +=  personproject.description ;
-					
+	                html +=  personalproject.description ;
+					console.log("inside person project fun");
 							
 				});
 				
@@ -146,7 +148,8 @@ function getpersonProject(){
 				
 			});
 			
-			runOverwriteScriptPersonalProject();
+   $( ".main_content article").ready(runOverwriteScriptPersonalProject());
+		
 }
 		
 
@@ -206,7 +209,7 @@ function btnSelectionAction(){
 		$("#btnSelection").attr("value","see portfolio");
 		getpersonProject();
 		floatDivPersonalProjects();
-		
+			
 	}else if(value == "see portfolio"){
 		removeTitleandAnchor();
 		
@@ -214,6 +217,9 @@ function btnSelectionAction(){
 		getporfolio();
 		floatDivPortfolio();
 	}
+	
+	 
+	
 }
 
 
