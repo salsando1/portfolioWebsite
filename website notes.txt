@@ -27,12 +27,58 @@ https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag
 website to see phone compability
 https://ready.mobi/#615257-ns77
 
+
+
+//-- what work for h2 listener------------//
+
+	$("article h2").each(function( index ) {
+	  	 
+     var num = index + 1;
+     var h2position =  $(this).position().top;
+     var browsertop = $(window).scrollTop();
+	 var h2positionafter = parseInt( h2position + 200);
+	 var h2positionbefore = parseInt(h2position - 100); 
+	 var lastScrollTop = 0;
+	 var totalofTag = $("article h2").length;
+	/* console.log(browsertop + "browser");
+	console.log(h2positionafter + "after");
+	console.log(h2positionbefore + "before"); */
+/* 		// range from 2 - 7
+	]if (moonOrbit > 1 && moonOrbit < 8)  */
+	
+	//console.log(totalofTag);
+	 
+	if(browsertop > h2positionbefore && browsertop < h2positionafter){
+		if(index == 0){
+			
+			$("#links_to_conten a" ).css({ "color":"#cb86ff", "font-weight": "bold"});
+			
+			$("#links_to_conten a" ).not("#aheading" + num).css({ "color": "#4183c4", "font-weight": "normal"}); 
+		
+		}else{
+			
+			if( h2position > browsertop){
+			
+			$("#links_to_conten a" ).css({ "color":"#cb86ff", "font-weight": "bold"});
+			//console.log("activate");
+			$("#links_to_conten a" ).not("#aheading" + index).css({ "color": "#4183c4", "font-weight": "normal"}); 	
+			
+			}else if( h2position < browsertop){
+				
+			$("#links_to_conten a" ).css({ "color":"#cb86ff", "font-weight": "bold"});
+			//console.log("activate");
+			$("#links_to_conten a" ).not("#aheading" + num).css({ "color": "#4183c4", "font-weight": "normal"}); 
+			}
+		}            
+			 
+	}
+	
+	});
+
+//-- what work for h2 listener------------//
+
 //------------------------------html for portfolio--------------------//
-	  	
-				   
-		   
-		   
-		   
+	   
 <article>
 	   <br>
 			<h2><a id="heading1">Class Construction and Object<a></h2>
