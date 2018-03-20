@@ -3,7 +3,7 @@
 $(document).ready(function(){
 	
 	
-	
+	console.log(window.height);
 	
 	$(document).on("scroll", autoScrollFloatDiv);	
     
@@ -180,7 +180,7 @@ function getpersonProject(){
 function setAnchorCss(){
 
 	$("article h2").each(function( index ) {
-	  	// $("#links_to_conten a" ).css({ "color":"#cb86ff", "font-weight": "bold"});
+	 	// $("#links_to_conten a" ).css({ "color":"#cb86ff", "font-weight": "bold"});
      var thish2 = index + 1;
 
      var browsertop = $(window).scrollTop();   
@@ -200,9 +200,9 @@ function setAnchorCss(){
 			$("#links_to_conten a" ).not("#aheading" + totalofTag).css({ "color": "#4183c4", "font-weight": "normal"}); 	
 		}
 	}else{
-		console.log(thish2);
+		//console.log(thish2);
         var num = thish2 + 1;
-		console.log(num);
+		//console.log(num);
 	 var h2next = parseInt( $("#heading" + num).position().top);
 	 var h2this = parseInt($(this).position().top);
 	 if(browsertop > h2this && browsertop < h2next){
@@ -237,7 +237,6 @@ function btnSelectionAction(){
 	 
 	
 }
-
 
 function removeTitleandAnchor(){
 	$( "#title h2" ).remove();
@@ -302,7 +301,7 @@ function floatDivPortfolio(){
 }
 
 function autoScrollFloatDiv(){
-		
+			 $("#links_to_conten a" ).css({ "color":"#4183c4", "font-weight": "bold"});
 	// converting top part of the file we are scrolling to int
 	var num = parseInt($(".main_content").position().top);
 	//num = num + 1000;
