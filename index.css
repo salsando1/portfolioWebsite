@@ -63,7 +63,7 @@ article{
 .image_myself{
     border-radius: 50%;
 	width:400px;
-	height:320px;
+	height:360px;
     margin-top:50px;
 	margin-left:750px;
 }
@@ -101,3 +101,232 @@ article{
    float:left;
    margin-bottom:40px;
 }
+
+
+@media only screen and (max-width: 1024px){
+body{
+	  width:1024px;
+        margin-left:auto;
+        margin-right:auto;
+}
+.introductionToWebsite{
+	height: 1080px;
+    
+	background-color:#cb86ff;
+}
+.mySelfIntroduction{
+  
+   height: 1080px;
+   vertical-align: middle;
+   background-color:#f794f2;
+   
+}
+
+article{
+	font-size:100%;
+	
+}
+
+#links_to_conten{
+	color: #4183c4;
+	font-weight: normal;
+}
+
+.textWebsiteIntroduction{
+  color:#f5ff86;
+  font-size:100px;
+  display: table-cell;
+  /*  vertical-align: middle; */
+  font-weight: 700;
+  text-align: center;
+}
+.section_text {
+	
+	margin-left:370px;
+	width:900px;
+  color:#f7eb94;
+  font-size:50px;
+  /* display: table-cell; 
+  text-align: center;*/
+  font-weight: 900;
+ 
+}
+
+#floatdiv{
+	margin-left:10px;
+	width: 240px;
+	float: left;
+
+}
+#btnSelection{
+ margin-left:5px;
+ margin-bottom:10px;
+}
+
+.main_content{
+	
+	margin-left:250px;
+   width:600px;
+}
+
+.image_myself{
+    border-radius: 50%;
+    width:400px;
+	height:360px;
+    margin-top:50px;
+	margin-left:260px;
+}
+.mainContentColor{
+	background-color:#feffc4;
+	
+}
+
+
+.mail_icon{
+   border-radius: 50%;
+   width:42px;
+	height:42px;
+	margin-left: 30px;
+	margin-top:10px;
+	margin-top:10px;
+	
+}
+
+
+.github_icon{
+	margin-top:15px;
+	border-radius: 50%;
+   width:40px;
+	height:40px;
+	margin-left:40px;
+   
+}
+.face_icon{
+	margin-top:10px;
+	   border-radius: 50%;
+   width:55px;
+	height:50px;
+	margin-left:30px;
+   float:left;
+   margin-bottom:40px;
+}
+
+}
+
+@media only screen and (max-width: 768px){	
+
+body{
+	    width:768px;
+        margin-left:auto;
+        margin-right:auto;
+}
+.introductionToWebsite{
+	height: 1080px;
+    
+	background-color:#cb86ff;
+}
+.mySelfIntroduction{
+  
+   height: 1080px;
+   vertical-align: middle;
+   background-color:#f794f2;
+   
+}
+
+article{
+	font-size:100%;
+	
+}
+
+#links_to_conten{
+	color: #4183c4;
+	font-weight: normal;
+}
+
+.textWebsiteIntroduction{
+width:200px;
+  color:#f5ff86;
+  font-size:140px;
+  display: table-cell;
+  /*  vertical-align: middle; */
+  font-weight: 700;
+  text-align: center;
+}
+.section_text {
+	
+	margin-left:620px;
+	width:700px;
+  color:#f7eb94;
+  font-size:45px;
+  /* display: table-cell; 
+  text-align: center;*/
+  font-weight: 900;
+ 
+}
+
+#floatdiv{
+	margin-left:10px;
+	width: 240px;
+	float: left;
+
+}
+#btnSelection{
+ margin-left:5px;
+ margin-bottom:10px;
+}
+
+.main_content{
+	
+	margin-left:240px;
+   width:450px;
+}
+
+.image_myself{
+    border-radius: 50%;
+    width:400px;
+	height:360px;
+    margin-top:50px;
+	margin-left:260px;
+}
+.mainContentColor{
+	background-color:#feffc4;
+	
+}
+
+
+.mail_icon{
+   border-radius: 50%;
+   width:42px;
+	height:42px;
+	margin-left: 30px;
+	margin-top:10px;
+	margin-top:10px;
+	
+}
+
+
+.github_icon{
+	margin-top:15px;
+	border-radius: 50%;
+   width:40px;
+	height:40px;
+	margin-left:40px;
+   
+}
+.face_icon{
+	margin-top:10px;
+	   border-radius: 50%;
+   width:55px;
+	height:50px;
+	margin-left:30px;
+   float:left;
+   margin-bottom:40px;
+}
+
+
+
+
+}
+
+
+
