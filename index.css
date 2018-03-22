@@ -57,7 +57,7 @@ article{
 .main_content{
 	
 	margin-left:290px;
-   width:750px;
+   width:1000px;
 }
 
 .image_myself{
@@ -104,6 +104,10 @@ article{
 
 
 @media only screen and (max-width: 1024px){
+.overflowdiv{
+   overflow: scroll;
+ 
+}
 body{
 	  width:1024px;
         margin-left:auto;
@@ -122,10 +126,7 @@ body{
    
 }
 
-article{
-	font-size:100%;
-	
-}
+
 
 #links_to_conten{
 	color: #4183c4;
@@ -164,7 +165,7 @@ article{
 }
 
 .main_content{
-	
+	 
 	margin-left:250px;
    width:600px;
 }
@@ -178,7 +179,7 @@ article{
 }
 .mainContentColor{
 	background-color:#feffc4;
-	
+	font-size:150%;
 }
 
 
@@ -210,11 +211,14 @@ article{
    float:left;
    margin-bottom:40px;
 }
-
 }
 
+/* 
 @media only screen and (max-width: 768px){	
-
+.overflowdiv{
+   overflow: scroll;
+ 
+}
 body{
 	    width:768px;
         margin-left:auto;
@@ -248,7 +252,7 @@ width:200px;
   color:#f5ff86;
   font-size:140px;
   display: table-cell;
-  /*  vertical-align: middle; */
+  
   font-weight: 700;
   text-align: center;
 }
@@ -258,8 +262,7 @@ width:200px;
 	width:700px;
   color:#f7eb94;
   font-size:45px;
-  /* display: table-cell; 
-  text-align: center;*/
+
   font-weight: 900;
  
 }
@@ -326,7 +329,7 @@ width:200px;
 
 
 
-}
+} */
 
 
 
