@@ -1,3 +1,6 @@
+// application ara
+// password \123%sAmf
+
 color i want to use
 1.yellow #ded447
 2.pink #ca47de

@@ -213,7 +213,7 @@ body{
 }
 }
 
-/* 
+ 
 @media only screen and (max-width: 768px){	
 .overflowdiv{
    overflow: scroll;
@@ -221,8 +221,7 @@ body{
 }
 body{
 	    width:768px;
-        margin-left:auto;
-        margin-right:auto;
+    
 }
 .introductionToWebsite{
 	height: 1080px;
@@ -268,10 +267,8 @@ width:200px;
 }
 
 #floatdiv{
-	margin-left:10px;
-	width: 240px;
-	float: left;
-
+	
+position:absolute;
 }
 #btnSelection{
  margin-left:5px;
@@ -280,8 +277,8 @@ width:200px;
 
 .main_content{
 	
-	margin-left:240px;
-   width:450px;
+
+  
 }
 
 .image_myself{
@@ -329,7 +326,7 @@ width:200px;
 
 
 
-} */
+}
 
 
 

@@ -3,7 +3,15 @@
 $(document).ready(function(){
 	
 	
-	console.log(window.height);
+	
+	
+
+	/* $( window).change(function() {
+	  var windowWidth = $(window).width();
+	  console.log(windowWidth);
+	}); */
+	
+	
 	
 	$(document).on("scroll", autoScrollFloatDiv);	
     
@@ -51,11 +59,14 @@ $(document).ready(function(){
 	
 	});
 	 */		 
-	 
-	floatDivPortfolio();
+	 // this is the mobile part
+	//mobileFloatDiv(); 
+	// this is the mobile part
+	 // this is full screen
+	//floatDivPortfolio();
     runOverwriteScriptPortfolio();
-	createAnchor();
-	anchorListenerforfloatDiv()
+	//createAnchor();
+	//anchorListenerforfloatDiv()
 	
 	$("#btnSelection").click(btnSelectionAction);
 	
@@ -70,6 +81,14 @@ $(document).ready(function(){
 	
 
 });
+
+function mobileFloatDiv(){
+$("#floatdiv").css("float","none");	
+$("#floatdiv").css("position","absolute");
+$(".main_content").css("width","768px");
+$("#icons_container a").remove()
+$("#btnSelection").remove()
+}
 
 
 function addGit(){
