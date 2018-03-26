@@ -3,18 +3,20 @@
 $(document).ready(function(){
 	
 	
-	
-	
-
+	var windowWidth = $(window).width();
+console.log(windowWidth);
+$("#title").append("<p>Portfolio</p>");
 	/* $( window).change(function() {
 	  var windowWidth = $(window).width();
 	  console.log(windowWidth);
 	}); */
 	
 	
+	// desktop 
+	//$(document).on("scroll", autoScrollFloatDiv);	
+    // mobile
+	$(document).on("scroll", mobileautoScrollFloatDiv);	
 	
-	$(document).on("scroll", autoScrollFloatDiv);	
-    
 	var isClick = true;
 	
 	
@@ -58,16 +60,19 @@ $(document).ready(function(){
 	    });
 	
 	});
-	 */		 
-	 // this is the mobile part
-	//mobileFloatDiv(); 
+	 */
+
+     $( window ).resize(function() {
+  
+     });	 
+	 
 	// this is the mobile part
 	 // this is full screen
 	//floatDivPortfolio();
     runOverwriteScriptPortfolio();
 	//createAnchor();
 	//anchorListenerforfloatDiv()
-	
+	// desktop 
 	$("#btnSelection").click(btnSelectionAction);
 	
    
@@ -82,13 +87,6 @@ $(document).ready(function(){
 
 });
 
-function mobileFloatDiv(){
-$("#floatdiv").css("float","none");	
-$("#floatdiv").css("position","absolute");
-$(".main_content").css("width","768px");
-$("#icons_container a").remove()
-$("#btnSelection").remove()
-}
 
 
 function addGit(){
@@ -317,6 +315,65 @@ function floatDivPortfolio(){
 	
 	$("#title").append("<h2>Portfolio</h2><p>The purpose of my portfolio is to summarize my programming knowledge, also show some of my college projects</p>");
 	$("#links_to_conten").append("<br>"); // add break to aside
+}
+function setH2Title(){
+
+	$("article h2").each(function( index ) {
+	 	
+     var thish2 = index + 1;
+
+     var browsertop = $(window).scrollTop();   
+	 browsertop =  parseInt(browsertop + 50);
+	/*  var h2next = parseInt( $("#heading" + num).position().top);
+	 var h2this = parseInt($("#heading" + index).position().top);  */
+   //console.log(browsertop);
+	 var totalofTag = $("article h2").length;
+/* 		// range from 2 - 7
+	]if (moonOrbit > 1 && moonOrbit < 8)  */
+	if(totalofTag == thish2){
+		
+		if (browsertop > parseInt($(this).position().top)){
+			$("#title p").remove();
+          $("#title").append("<p>"+$(this).text()+"</p>");
+		}
+	}else{
+		//console.log(thish2);
+        var num = thish2 + 1;
+		//console.log(num);
+	 var h2next = parseInt( $("#heading" + num).position().top);
+	 var h2this = parseInt($(this).position().top);
+	 if(browsertop > h2this && browsertop < h2next){
+		$("#title p").remove();
+          $("#title").append("<p>"+$(this).text()+"</p>");
+	 }
+	 
+	}
+	
+	});
+}
+
+function mobileautoScrollFloatDiv(){
+		// converting top part of the file we are scrolling to int
+	var num = parseInt($(".main_content").position().top);
+	//num = num + 1000;
+	//console.log(num);
+	console.log($(this).scrollTop());
+    if($(this).scrollTop()  <  num ){
+		
+
+	   $("#floatdiv").css("top", num);
+    }else {
+		//var introHeight = parseInt($(".main_content").position().top);
+//		console.log(introHeight);
+		//introHeight = (introHeight * 2) - 100;
+		var num = parseInt($(this).scrollTop());
+		//num = num - introHeight;
+		//console.log(num);
+		$("#floatdiv").css("top", num);
+	
+	}
+   			
+	setH2Title();
 }
 
 function autoScrollFloatDiv(){

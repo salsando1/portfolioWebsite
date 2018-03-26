@@ -44,9 +44,11 @@ article{
 }
 
 #floatdiv{
+	position:absolute;
 	margin-left:10px;
 	width: 240px;
 	float: left;
+	height:100vh;
 
 }
 #btnSelection{
@@ -213,32 +215,31 @@ body{
 }
 }
 
- 
+ /*mobile*/
 @media only screen and (max-width: 768px){	
 .overflowdiv{
    overflow: scroll;
- 
 }
 body{
 	    width:768px;
     
 }
 .introductionToWebsite{
-	height: 1080px;
+	height: 100vh;
     
 	background-color:#cb86ff;
 }
 .mySelfIntroduction{
   
-   height: 1080px;
+   height: 100vh;
    vertical-align: middle;
    background-color:#f794f2;
    
 }
 
 article{
-	font-size:100%;
-	
+	width:700px;
+	font-size:20px;
 }
 
 #links_to_conten{
@@ -247,86 +248,179 @@ article{
 }
 
 .textWebsiteIntroduction{
-width:200px;
   color:#f5ff86;
-  font-size:140px;
-  display: table-cell;
-  
-  font-weight: 700;
-  text-align: center;
+  font-size:145px;
+  text-align:center;
+  width:200px;
+
+
 }
 .section_text {
 	
-	margin-left:620px;
-	width:700px;
+  text-align:center;
   color:#f7eb94;
-  font-size:45px;
-
-  font-weight: 900;
- 
+  font-size:30px;
+  width:700px;
+float:right;
+margin-right:50px;
 }
 
 #floatdiv{
-	
-position:absolute;
+  margin-right:5px;
+  width:100vw;
+  background-color:#cb86ff;
+  position:absolute;
+  display: flex;
 }
+#icons_container{
+	position: right;
+}
+
 #btnSelection{
- margin-left:5px;
- margin-bottom:10px;
+    position: right;
 }
 
 .main_content{
-	
-
+	width:700px;
+   margin-left:5px;
   
 }
 
 .image_myself{
-    border-radius: 50%;
-    width:400px;
-	height:360px;
+   border-radius: 50%;
+    width:350px;
+	height:290px;
     margin-top:50px;
-	margin-left:260px;
+	margin-left:210px;
 }
 .mainContentColor{
 	background-color:#feffc4;
 	
 }
 
-
-.mail_icon{
-   border-radius: 50%;
-   width:42px;
-	height:42px;
-	margin-left: 30px;
-	margin-top:10px;
-	margin-top:10px;
+#git20{
+	
+	width:700px;
+	
+}
+#git19{
+	
+	width:700px;
 	
 }
 
-
-.github_icon{
-	margin-top:15px;
-	border-radius: 50%;
-   width:40px;
-	height:40px;
-	margin-left:40px;
-   
-}
-.face_icon{
-	margin-top:10px;
-	   border-radius: 50%;
-   width:55px;
-	height:50px;
-	margin-left:30px;
-   float:left;
-   margin-bottom:40px;
+#git18{
+	
+	width:700px;
+	
 }
 
-
-
-
+#git17{
+	
+	width:700px;
+	
 }
 
+#git16{
+	
+	width:700px;
+	
+}
 
+#git15{
+	
+	width:700px;
+	
+}
 
+#git14{
+	
+	width:700px;
+	
+}
+
+#git13{
+	
+	width:700px;
+	
+}
+
+#git12{
+	
+	width:700px;
+	
+}
+
+#git11{
+	
+	width:700px;
+	
+}
+
+#git10{
+	
+	width:700px;
+	
+}
+
+#git9{
+	
+	width:700px;
+	
+}
+
+#git8{
+	
+	width:700px;
+	
+}
+
+#git7{
+	
+	width:700px;
+	
+}
+
+#git6{
+	
+	width:700px;
+	
+}
+
+#git5{
+	
+	width:700px;
+	
+}
+
+#git4{
+	
+	width:700px;
+	
+}
+
+#git3{
+	
+	width:700px;
+	
+}
+
+#git2{
+	
+	width:700px;
+	
+}
+
+#git1{
+	
+	width:700px;
+	
+}
+
+#git0{
+	
+	width:700px;
+	
+}
+
+}
