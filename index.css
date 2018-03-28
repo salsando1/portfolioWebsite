@@ -2,6 +2,7 @@ body{
 	  width:1900px;
         margin-left:auto;
         margin-right:auto;
+		background-image:"circut_board.jpg";
 }
 .introductionToWebsite{
 	height: 1080px;
@@ -15,7 +16,12 @@ body{
    background-color:#f794f2;
    
 }
-
+ul{
+	    list-style-type: none;
+}
+a{
+	text-decoration:none;
+}
 article{
 	font-size:100%;
 	
@@ -45,12 +51,14 @@ article{
 
 #floatdiv{
 	position:absolute;
-	margin-left:10px;
+	
 	width: 240px;
+    height:100vh;
 	float: left;
 	height:100vh;
-
+    background-color: #FFF;
 }
+
 #btnSelection{
  margin-left:5px;
  margin-bottom:10px;
