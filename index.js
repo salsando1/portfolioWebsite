@@ -2,6 +2,8 @@
 
 $(document).ready(function(){
 	
+	$('.sidenav').sidenav();
+	//$(".dropdown-trigger").dropdown();
 	
 	var windowWidth = $(window).width();
 
@@ -68,7 +70,7 @@ $(document).ready(function(){
 	// this is the mobile part
 	 // this is full screen
 	//floatDivPortfolio();
-    runOverwriteScriptPortfolio();
+    //runOverwriteScriptPortfolio();
 	//createAnchor();
 	//anchorListenerforfloatDiv()
 	// desktop 
@@ -81,7 +83,7 @@ $(document).ready(function(){
    	
 	$("#links_to_conten a" ).css( "text-decoration", "none" );
 			
-    $( document ).ajaxComplete(addGit);    	
+   // $( document ).ajaxComplete(addGit);    	
 	
 
 });

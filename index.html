@@ -8,139 +8,65 @@
 	<title>Salvador Portfolio</title>
 	<link href="index.css" rel="stylesheet">
 	<link href="code.css" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/postscribe/2.0.8/postscribe.min.js"></script>	
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--  potscribe god library to run script after dom have been parse and loaded
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/postscribe/2.0.8/postscribe.min.js"></script>	 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>	
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
      <script src="index.js"></script>    
 
 </head>
 
-<body >
-<div id="floatdiv">
+<body>
 
-   <ul>
-   <li><h2>Salvador Sandoval computer programmer</h2></li>
+		<!-- test -->
+		<div class="navbar-fixed">
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+       <li ><a href="#about" class="btn waves-effect waves-teal">About</a></li>
+		<li><a href="#skills" class="btn waves-effect waves-teal">Skills</a></li>
+		<li><a href="#personal_projects" class="btn waves-effect waves-teal">Personal Projects</a></li>
+		<li><a href="#resume" class="btn waves-effect waves-teal">Resume</a></li>
+		<li><a href="#contact" class="btn waves-effect waves-teal">Contact</a></li>
+		<li><a href="#education" class="btn waves-effect waves-teal">Education</a></li>
+      </ul>
+    </div>
+    
+  </nav>
+</div>
+  <ul class="sidenav" id="mobile-demo">
+  <li ><a href="#about" class="btn waves-effect waves-teal">About</a></li>
+		<li><a href="#skills" class="btn waves-effect waves-teal">Skills</a></li>
+		<li><a href="#personal_projects" class="btn waves-effect waves-teal">Personal Projects</a></li>
+		<li><a href="#resume" class="btn waves-effect waves-teal">Resume</a></li>
+		<li><a href="#contact" class="btn waves-effect waves-teal">Contact</a></li>
+		<li><a href="#education" class="btn waves-effect waves-teal">Education</a></li>
+  </ul>
 
-		
-		 
-		 
-		<li><a href="#about" >About</a></li>
-		<li><a href="#skills" >Skills</a></li>
-		<li><a href="#personal_projects" >Personal Projects</a></li>
-		<li><a href="#resume" >Resume</a></li>
-		<li><a href="#contact" >Contact</a></li>
-		<li><a href="#education" >Education</a></li>
-		</ul>
-		</div>
-<section class = "introductionToWebsite">
-<div class="textWebsiteIntroduction">
-  <h3 >Welcome to my portfolio!!</h3>
- </div>
-</section>
 
-<section class="mySelfIntroduction">
-<img src="my_self.jpg" class="image_myself" alt="my self" height="100" width="100"> 
-       
-   <div class="section_text">
-   <h3 >Hello! My name is Salvador, I'm a programmer on this website I will show some of my personal projects and programming concepts I learn in college. Thank you for your visit.</h3>
-    </div>    	
-</section>
-<div class="mainContentColor">
 
+
+		<!-- test -->
 	
-<!--this is where all show explanation & code -->
-	<div class="main_content">
-		<article>
-	   <br>
-			<h2><a id="about">Class Construction and Object<a></h2>
-			<p>Object-Oriented programming or OOP is the concept of programming based on objects, object are used to build and design application. 
-			The advantage of objects model real-world application, code reuse, encapsulation and design benefits (breaking a big problem in small object.)</p>
-			<h3>C++</h3>
-			<p>In c++ class, Construction consist of a .cpp and .h files. .h files are where class is defined and
-			.cpp file is where class is implemented. .h have all the library we use in our object.</p>
-			<div id="git0"></div>
-			<p>Here we implemented are overloaded constructor and default constructor.</p>
-			<div id="git1"></div>	
-	        <p>Here we implemented are overloaded method.</p>
-			<div id="git2"></div>
-			<br>
-			<div id="git3"></div>
-			<p>Here is where we make use of are overloaded constructor</p>
-			<div id="git4"></div>
-			<p>Here is where we make use of are overloaded method.</p>
-			<div id="git20"></div>
-			<h3>C#</h3>
-			<p>C# only use one file per class  of files is .cs.Here is where we declared are default
-			constructor and overloaded constructor. Also, this constructor call the base constructor from sprocket class.</p>
-
-			<p>Here is where we define are overloaded constructor. We initialize member variable through constructor.</p>
-			<div id="git5"></div>
-			<p>Here is where we define are overloaded method.</p>
-			<div id="git6"></div>
-			<p>Here we implement one of the method. Were we only add to the end of the list. 
-			We still have the option in the future if we want to implement adding at certain position.</p> 
-            <div id="git7"></div>			
-			<h3>Java</h3>
-			<p>Java  like C# we can declare and define are class in the same file. The java files have the extension of file.java</p>
-            <br>
-            <p>Here is where I declare my overloaded constructor.</p>			
-			<div id="git8"></div>			
-			<p>Here is where I declare my overloaded mutator. </p>
-			<div id="git9"></div>			
-			<p>Here I decide to use the overloaded method by using int.</p>
-			<div id="git10"></div>			
-		    <p>Here a use the overloaded method by passing string and int.</p>	
-		   <div id="git11"></div>			
-           <p></p>		   
-          
-		  <h2><a id="heading2">Inheritance and Polymorphism<a></h2>
-		  <p>Inheritance is important because it allow us to reuse code.
-		  Example if we have a base class vehicle. Member variable 
-		  that contains tire, motor, color. We can create a child 
-		  class call truck inherit all those Qualities just add cargo bed
-		  variable. This way we do not to write the whole class.</p>
-		   <h3>C#</h3>
-	       <p>Game object is going to be are base class</p>
-	       <div id="git12"></div>					
-		   <p>Here is where tell the compiler this child class and we are going to inherit from this base class.</p>   
-		   <div id="git13"></div>						
-		   <p>Since we inherit from Game object. Alien is the same data type as Game object.</p>
-		   <div id="git14"></div>						
-		   <h2><a id="heading3">Graphical User Interface Construction</a></h2>
-		   <p>The Most modern Graphical user interface for windows is Windows
-		   form.  Windows form is from .Net framework. We start by 
-		   inherit from window.  We get the basics just a frame like 
-		   in swing. We can start adding are controllers through 
-		   the XAML.</p>
-		   <div id="git15"></div>
-		   <p>What makes windows form more dynamic is XAML. You can easily make 
-		   changes to your GUI. Nest controllers inside of controllers. 
-		   Initialize the GUI like when launch certain check box needs to be
-		   check with a line of code.</p>
-		   <div class="overflowdiv"><img src="http://ssandoval114.com/jsonFiles/csGuiMaiinScreeen.JPG"  alt="c++ class construction" height="575" width="646"></div>
-		   <p>Dialogs are important so you can tell the user if he is doing something wrong.</p>
-		   <div class="overflowdiv"><img src="http://ssandoval114.com/jsonFiles/csGuiDialog.JPG"  alt="c++ class construction" height="590" width="685"></div>
-		    <p>Another way you can interact with the user is by writing the result or probably an order like following.</p> 
-		   <div id="git16"></div>
-		   
-		   <h2><a id="heading4">Database manipulation</a></h2>
-		   <h3>C#</h3>
-		   <p>GUI are important especially when you can combined with a 
-		   connection through a database. .Since Microsoft have its Microsoft 
-		   SQL server.  C# library for Microsoft SQL is sqlClient. Allow as to 
-		   connect to database and query the database without using SQL syntax.</p>
-		   <div id="git17"></div>
-		   <p>Here is how we create are connection to server. Also, how we 
-		   open the connection and make sure if anything goes wrong we closed
-		   the connection.</p>
-		   <div id="git18"></div>
-           <p>Here is how we Query the database for example update statement.</p>		   
-		   <div id="git19"></div>
-		   <br>
-		   
-		   	</article>
-	</div>
-	</div>
+	
+	
+		
+		<main>
+		
+		<section>
+		<img class="responsive-img" src="portfolio/my_self.png"></img>
+		</section>
+		 <h3 class="page-title white-text teal">About</h3>
+		<section class="container flow-text grey lighten-5" id="about">
+       
+	    <p>Hellow my name is salvador</p>
+		</section>
+	
+     </main>
 </body>
 </html>
 

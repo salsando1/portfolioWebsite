@@ -30,217 +30,27 @@ https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag
 website to see phone compability
 https://ready.mobi/#615257-ns77
 
+  // this is the original side nav
+		   
+<!-- this is only display on desktop-->
+  
+     
+	  
+<div class="hide-on-small-only" id="floatdiv">
+<h2 class="h2title">Salvador Sandoval </h2><p class="title">computer programmer</p>
+   <ul>
+   <li></li>
 
-
-//-- what work for h2 listener------------//
-
-	$("article h2").each(function( index ) {
-	  	 
-     var num = index + 1;
-     var h2position =  $(this).position().top;
-     var browsertop = $(window).scrollTop();
-	 var h2positionafter = parseInt( h2position + 200);
-	 var h2positionbefore = parseInt(h2position - 100); 
-	 var lastScrollTop = 0;
-	 var totalofTag = $("article h2").length;
-	/* console.log(browsertop + "browser");
-	console.log(h2positionafter + "after");
-	console.log(h2positionbefore + "before"); */
-/* 		// range from 2 - 7
-	]if (moonOrbit > 1 && moonOrbit < 8)  */
-	
-	//console.log(totalofTag);
-	 
-	if(browsertop > h2positionbefore && browsertop < h2positionafter){
-		if(index == 0){
-			
-			$("#links_to_conten a" ).css({ "color":"#cb86ff", "font-weight": "bold"});
-			
-			$("#links_to_conten a" ).not("#aheading" + num).css({ "color": "#4183c4", "font-weight": "normal"}); 
 		
-		}else{
-			
-			if( h2position > browsertop){
-			
-			$("#links_to_conten a" ).css({ "color":"#cb86ff", "font-weight": "bold"});
-			//console.log("activate");
-			$("#links_to_conten a" ).not("#aheading" + index).css({ "color": "#4183c4", "font-weight": "normal"}); 	
-			
-			}else if( h2position < browsertop){
-				
-			$("#links_to_conten a" ).css({ "color":"#cb86ff", "font-weight": "bold"});
-			//console.log("activate");
-			$("#links_to_conten a" ).not("#aheading" + num).css({ "color": "#4183c4", "font-weight": "normal"}); 
-			}
-		}            
-			 
-	}
-	
-	});
-
-//-- what work for h2 listener------------//
-
-//------------------------------html for portfolio--------------------//
-	   
-<article>
-	   <br>
-			<h2><a id="heading1">Class Construction and Object<a></h2>
-			<p>Object-Oriented programming or OOP is the concept of programming based on objects, object are used to build and design application. 
-			The advantage of objects model real-world application, code reuse, encapsulation and design benefits (breaking a big problem in small object.)</p>
-			<h3>C++</h3>
-			<p>In c++ class, Construction consist of a .cpp and .h files. .h files are where class is defined and
-			.cpp file is where class is implemented. .h have all the library we use in our object.</p>
-			<div id="git0"></div>
-			<p>Here we implemented are overloaded constructor and default constructor.</p>
-			<div id="git1"></div>	
-	        <p>Here we implemented are overloaded method.</p>
-			<div id="git2"></div>
-			<br>
-			<div id="git3"></div>
-			<p>Here is where we make use of are overloaded constructor</p>
-			<div id="git4"></div>
-			<p>Here is where we make use of are overloaded method.</p>
-			<div id="git20"></div>
-			<h3>C#</h3>
-			<p>C# only use one file per class  of files is .cs.Here is where we declared are default
-			constructor and overloaded constructor. Also, this constructor call the base constructor from sprocket class.</p>
-
-			<p>Here is where we define are overloaded constructor. We initialize member variable through constructor.</p>
-			<div id="git5"></div>
-			<p>Here is where we define are overloaded method.</p>
-			<div id="git6"></div>
-			<p>Here we implement one of the method. Were we only add to the end of the list. 
-			We still have the option in the future if we want to implement adding at certain position.</p> 
-            <div id="git7"></div>			
-			<h3>Java</h3>
-			<p>Java  like C# we can declare and define are class in the same file. The java files have the extension of file.java</p>
-            <br>
-            <p>Here is where I declare my overloaded constructor.</p>			
-			<div id="git8"></div>			
-			<p>Here is where I declare my overloaded mutator. </p>
-			<div id="git9"></div>			
-			<p>Here I decide to use the overloaded method by using int.</p>
-			<div id="git10"></div>			
-		    <p>Here a use the overloaded method by passing string and int.</p>	
-		   <div id="git11"></div>			
-           <p></p>		   
-          
-		  <h2><a id="heading2">Inheritance and Polymorphism<a></h2>
-		  <p>Inheritance is important because it allow us to reuse code.
-		  Example if we have a base class vehicle. Member variable 
-		  that contains tire, motor, color. We can create a child 
-		  class call truck inherit all those Qualities just add cargo bed
-		  variable. This way we do not to write the whole class.</p>
-		   <h3>C#</h3>
-	       <p>Game object is going to be are base class</p>
-	       <div id="git12"></div>					
-		   <p>Here is where tell the compiler this child class and we are going to inherit from this base class.</p>   
-		   <div id="git13"></div>						
-		   <p>Since we inherit from Game object. Alien is the same data type as Game object.</p>
-		   <div id="git14"></div>						
-		   <h2><a id="heading3">Graphical User Interface Construction</a></h2>
-		   <p>The Most modern Graphical user interface for windows is Windows
-		   form.  Windows form is from .Net framework. We start by 
-		   inherit from window.  We get the basics just a frame like 
-		   in swing. We can start adding are controllers through 
-		   the XAML.</p>
-		   <div id="git15"></div>
-		   <p>What makes windows form more dynamic is XAML. You can easily make 
-		   changes to your GUI. Nest controllers inside of controllers. 
-		   Initialize the GUI like when launch certain check box needs to be
-		   check with a line of code.</p>
-		   <div class="overflowdiv"><img src="http://ssandoval114.com/jsonFiles/csGuiMaiinScreeen.JPG"  alt="c++ class construction" height="575" width="646"></div>
-		   <p>Dialogs are important so you can tell the user if he is doing something wrong.</p>
-		   <div class="overflowdiv"><img src="http://ssandoval114.com/jsonFiles/csGuiDialog.JPG"  alt="c++ class construction" height="590" width="685"></div>
-		    <p>Another way you can interact with the user is by writing the result or probably an order like following.</p> 
-		   <div id="git16"></div>
-		   
-		   <h2><a id="heading4">Database manipulation</a></h2>
-		   <h3>C#</h3>
-		   <p>GUI are important especially when you can combined with a 
-		   connection through a database. .Since Microsoft have its Microsoft 
-		   SQL server.  C# library for Microsoft SQL is sqlClient. Allow as to 
-		   connect to database and query the database without using SQL syntax.</p>
-		   <div id="git17"></div>
-		   <p>Here is how we create are connection to server. Also, how we 
-		   open the connection and make sure if anything goes wrong we closed
-		   the connection.</p>
-		   <div id="git18"></div>
-           <p>Here is how we Query the database for example update statement.</p>		   
-		   <div id="git19"></div>
-		   <br>
-		   
-		   	</article>
-
-//------------------------------html for portfolio--------------------//
-
-//------------------------------personal project--------------------//
-
-	<article>
-	   <br>
-			<h2><a id="heading1">Schedule Generator<a></h2>
-			<p>The program generates schedules. You tell the program business hours, and the days you want off,
-			how many hours you want to work and randomly set if the person is going to open or close.</p>
-			<h3>The flow of the program.</h3>
-			<p>First, you set up the business hours.</p>
-			<div class="overflowdiv"><img id= "schedule1" src="http://ssandoval114.com/jsonFiles/schedule1.JPG" height="586" width="1222"></div>
-			<div class="overflowdiv"><img src="http://ssandoval114.com/jsonFiles/schedule2.JPG" height="600" width="694"></div>
-			<p>after setting the hours the program actually give the option to add an employee </p>
-			<div class="overflowdiv"><img id="schedule3" src="http://ssandoval114.com/jsonFiles/schedule3.JPG" height="577" width="1226"></div>
-			<p>Second, tell the program total hours and days off you need.</p>
-			<img id="schedule4" src="http://ssandoval114.com/jsonFiles/schedule4.JPG" height="280" width="444">
-			<p>Lastly, the program prints the schedule with the main screen you can modify the schedule as you please.</p>
-            <div class="overflowdiv"><img id="schedule5" src="http://ssandoval114.com/jsonFiles/schedule5.JPG" height="582" width="1216"></div>
-			<h3> Data class</h3>
-			<h4>Time Class</h4>
-			<p>The time class has the ability to accept time in am or pm and 24 hours. Also, the time gives the
-			total hours and minutes the from the time. Time return a formatted string time.</p>
-			<div id="git1"></div>
-			<h4>Schedule class</h4>
-			<p>Schedule class is the one who holds time. Also has the ability to add all the week minutes and 
-			hours. The schedule also has the ability to return a formatted string method the return a formatted schedule.</p>
-			<div id="git2"></div>
-			<h4>Schedule Generator</h4>
-			<p>First, the class checks if requested working hours is in the range of business hours.</p>
-			<div id="git3"></div>
-			<p>Second, working hours are divided randomly in the week, the way this actually works randomly 
-			get day subtract 30 minutes from working hours and add to date. Stop until working hours reach 0.</p>
-			<div id="git4"></div>
-			<p>Lastly, randomly choose is going to open or closed. If open is selected start counting 
-			from opening else if closed is selected start counting from closed time.</p>
-			<div id="git5"></div>
-			<h2><a id="heading2">Timekeeping Android App with CRUD using SQLite <a></h2>
-			<p>This program store time and tells you hours and minutes you have made so far.</p>
-		    <h3>The flow of the program.</h3>
-			<p>The main screen shows all the hours you did so far.</p>
-			<div class="overflowdiv"><img src="http://ssandoval114.com/jsonFiles/TimeKeeping1.PNG" height="1093" width="583"></div>
-			<p>If you want to see the total hours you did on a day you can touch the date and dialog will 
-			show you time and total hours for the day. You can add another time by touching the plus sign in the dialog.</p>
-			<div class="overflowdiv"><img src="http://ssandoval114.com/jsonFiles/TimeKeeping2.PNG" height="1089" width="564"></div>
-			<div class="overflowdiv"><img src="http://ssandoval114.com/jsonFiles/TimeKeeping3.PNG" height="1079" width="559"></div>
-			<p>If you want to add another date you can do that on the main screen. This screen shows you a calendar as 
-			well. The program also can delete all records or delete by date. </p>
-			<div class="overflowdiv"><img src="http://ssandoval114.com/jsonFiles/TimeKeeping5.PNG" height="1096" width="560"></div>			
-			<h3> Class the handle data</h3>
-			<h4>TimeKeepingCursorAdapter Class</h4>
-			<p>We use a simple cursor adapter. This class helps us to put data in a listview.</p>
-			<div id="git6"></div>
-			<h4>TimeKeepinginDbAdapter Class</h4>
-			<p>This class is the one who queries the database.</p>
-			<div id="git7"></div>
-			<h2><a id="heading3">Portfolio Website<a></h2>
-			<h3> Floatdiv</h3>
-			<p>The code check when the top of the browser reaches the main content then div start moving to the top of the
-			browser. If you pass the top of main content then stop and stay there.</p>
-			<div id="git8"></div>
-             <h3>Button action</h3>
-			 <p>Since the website uses Ajax.  The h2 constantly changes then JavaScript copy and create a new anchor. Also, 
-			 this same part adds a new title to floatdiv that relate to what you seeing.</p>
-			 <div id="git9"></div>
-			 <h3>Listener for h2</h3>
-			 <p>The listener make a change to anchor on floatdiv, every time top  of browser pass h2<p/>
-	        <div id="git10"></div>
-         	<br>
-			 </article>
-
-//------------------------------personal project--------------------//
+		 
+		 
+		<li ><a href="#about" class="btn waves-effect waves-teal">About</a></li>
+		<li><a href="#skills" class="btn waves-effect waves-teal">Skills</a></li>
+		<li><a href="#personal_projects" class="btn waves-effect waves-teal">Personal Projects</a></li>
+		<li><a href="#resume" class="btn waves-effect waves-teal">Resume</a></li>
+		<li><a href="#contact" class="btn waves-effect waves-teal">Contact</a></li>
+		<li><a href="#education" class="btn waves-effect waves-teal">Education</a></li>
+		</ul>
+		</div>
+  
+	 <!-- this is only display on desktop-->
