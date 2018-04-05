@@ -4,19 +4,17 @@ body{
 
 
 .h2title{
-	margin-left:10px;
+	
 	color:#0b414f;
 	font-weight:200;
 }
 .title{
-	margin-left:10px;
 	font-size:15px;
 	font-family: Monospace;
     color:#2dabc7;
 	font-weight:800;
+
 }
-
-
 
 
 ul{
@@ -42,6 +40,9 @@ height:9%!important;
 
 }
 
+#mono{
+	font-family: Monospace;
+}
 
 #floatdiv{
 	position:absolute;
