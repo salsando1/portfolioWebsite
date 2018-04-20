@@ -3,33 +3,14 @@ body{
 }
 
 
-.h2title{
-	
-	color:#0b414f;
-	font-weight:200;
-}
-.title{
-	font-size:15px;
-	font-family: Monospace;
-    color:#2dabc7;
-	font-weight:800;
-
-}
 
 
-ul{
-	    list-style-type: none;
-		     
-}
-li{
-	
-	margin:0 0 80px 0;  
-	
-}
+
+
 a{
 	text-decoration:none;
 }
-a:hover {color: yellow;}
+
 
 
 .desktop_position{
@@ -53,5 +34,10 @@ height:9%!important;
 	height:100vh;
     background-color: #FFF;
 }
+.card-reveal ul li {
+  
+    list-style-type: disc;
+}
 
+.material-icons.blue1234{ color: #BBDEFB; }
 
