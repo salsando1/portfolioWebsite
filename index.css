@@ -1,12 +1,57 @@
 body{
-	background:url(portfolio/circut_board.png);
+	background:url(circut_board.png);
+}
+ 
+@media only screen and (max-width: 1291px){
+#title_size{
+width:460px;	
+}	
+} 
+
+@media only screen and (max-width: 1245px){
+#title_size{
+width:400px;	
+}	
+} 
+
+@media only screen and (max-width: 1196px){
+#title_size{
+width:380px;	
+
+}	
 }
 
+@media only screen and (max-width: 1171px){
+#title_size{
+width:350px;	
 
+}	
+}  
+@media only screen and (max-width: 1143px){
+#title_size{
+width:300px;	
 
+}	
+}
+@media only screen and (max-width: 1139px){
+#title_size{
+width:290px;	
 
+}	
+} 
+@media only screen and (max-width: 1086px){
+#title_size{
+width:200px;	
 
+}	
+} 
+  
+@media only screen and (max-width: 991px){
+#title_size{
+width:auto;	
 
+}	
+} 
 a{
 	text-decoration:none;
 }
@@ -36,7 +81,7 @@ height:9%!important;
 }
 .card-reveal ul li {
   
-    list-style-type: disc;
+    list-style-type: disc!important;
 }
 
 .material-icons.blue1234{ color: #BBDEFB; }

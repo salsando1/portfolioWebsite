@@ -12,6 +12,10 @@ $(document).ready(function(){
 	  console.log(windowWidth);
 	}); */
 	
+	$( window ).resize(function() {
+  console.log($(window).width());
+});
+	
 	
 	// desktop 
 	$(document).on("scroll", autoScrollFloatDiv);	

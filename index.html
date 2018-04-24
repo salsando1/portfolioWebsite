@@ -8,7 +8,7 @@
 	<title>Salvador Portfolio</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="index.css" rel="stylesheet">
-	<link href="code.css" rel="stylesheet">
+	
 	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--  potscribe god library to run script after dom have been parse and loaded
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/postscribe/2.0.8/postscribe.min.js"></script>	 -->
@@ -16,7 +16,9 @@
 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
      <script src="index.js"></script>    
-
+<link rel="icon" 
+      type="image/png" 
+      href="fav.png">
 </head>
 
 <body>
@@ -25,10 +27,10 @@
 		<div class="navbar-fixed">
   <nav class="nav-extended grey lighten-5">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo rigth"> <img class="responsive-img" src="title.gif"></img> </a>
+      <a href="#" class="brand-logo rigth"> <div id="title_size"><img class="responsive-img" src="title.gif"></img></div></a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons blue1234">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-       <li ><a href="#about" class="btn waves-effect waves-teal">About</a></li>
+       <li ><a href="#about" class="btn waves-effect waves-">About</a></li>
 		<li><a href="#skills" class="btn waves-effect waves-teal">Skills</a></li>
 		<li><a href="#personal_projects" class="btn waves-effect waves-teal">Personal Projects</a></li>
 		<li><a href="#contact" class="btn waves-effect waves-teal">Contact</a></li>
@@ -39,7 +41,7 @@
     
   </nav>
 </div>
-  <ul class="sidenav" id="mobile-demo">
+  <ul class="sidenav show-on-medium" id="mobile-demo">
   <li ><a href="#about" class="btn waves-effect waves-teal">About</a></li>
 		<li><a href="#skills" class="btn waves-effect waves-teal">Skills</a></li>
 		<li><a href="#personal_projects" class="btn waves-effect waves-teal">Personal Projects</a></li>
@@ -51,7 +53,7 @@
 		<main>
 		
 		<section>
-		<img class="responsive-img" src="portfolio/my_self.png"></img>
+		<img class="responsive-img" src="my_self.png"></img>
 		</section>
 		 
 		<section class="container grey lighten-5" id="about">
@@ -70,9 +72,9 @@
             <div class="card-content">
               <h4 id= "mono" class="blue-text light">progamming languages</h4>
               <div class="row text-center">
-                <div class="col s5 m2"><img alt="" src="portfolio/c++.png" class="responsive-img">C++</div>
-                <div class="col s5 m2"><img alt="" src="portfolio/c_sharp.png" class="responsive-img">C#</div>
-                <div class="col s5 m2"><img alt="" src="portfolio/java.png" class="responsive-img">Java</div>
+                <div class="col s5 m2"><img alt="" src="c++.png" class="responsive-img">C++</div>
+                <div class="col s5 m2"><img alt="" src="c_sharp.png" class="responsive-img">C#</div>
+                <div class="col s5 m2"><img alt="" src="java.png" class="responsive-img">Java</div>
                 
               </div>
             </div>
@@ -82,10 +84,10 @@
             <div class="card-content">
               <h4 id= "mono" class="blue-text light">Web</h4>
               <div class="row text-center">
-                <div class="col s5 m2"><img alt="" src="portfolio/css3.png" class="responsive-img">CSS3</div>
-                <div class="col s5 m2"><img alt="" src="portfolio/html5.png" class="responsive-img">HTML5</div>
-                <div class="col s5 m2"><img alt="" src="portfolio/javascript.png" class="responsive-img">JAVASCRIPT</div>
-                <div class="col s5 m2"><img alt="" src="portfolio/jquery.png" class="responsive-img">JQuery</div>
+                <div class="col s5 m2"><img alt="" src="css3.png" class="responsive-img">CSS3</div>
+                <div class="col s5 m2"><img alt="" src="html5.png" class="responsive-img">HTML5</div>
+                <div class="col s5 m2"><img alt="" src="javascript.png" class="responsive-img">JAVASCRIPT</div>
+                <div class="col s5 m2"><img alt="" src="jquery.png" class="responsive-img">JQuery</div>
               </div>
             </div>
           </div>
@@ -93,7 +95,7 @@
             <div class="card-content">
               <h4 id= "mono" class="blue-text light">Other</h4>
               <div class="row text-center">
-                <div class="col s5 m2"><img alt="" src="portfolio/photoshop.png" class="responsive-img">Photoshop</div>
+                <div class="col s5 m2"><img alt="" src="photoshop.png" class="responsive-img">Photoshop</div>
               </div>
             </div>
 		  </section>
@@ -105,7 +107,7 @@
     <div class="col s12 m6 l4">
 	     <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="portfolio/schedule5.jpg">
+      <img class="activator" src="schedule5.JPG">
     </div>
     <div class="card-content">
 	<a class="btn-floating halfway-fab waves-effect waves-light blue" href="https://github.com/salsando1/schedule-generator" target="_blank" ><i class="material-icons">code</i></a>
@@ -127,7 +129,7 @@
       <div class="col s12 m6 l4">
 	     <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="portfolio/TimeKeeping1.png">
+      <img class="activator" src="TimeKeeping1.png">
     </div>
     <div class="card-content">
 	<a class="btn-floating halfway-fab waves-effect waves-light blue" href="https://github.com/salsando1/timeKeeping" target="_blank" ><i class="material-icons">code</i></a>
